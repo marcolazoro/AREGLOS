@@ -1,0 +1,61 @@
+package javaapplication1;
+
+   public class Programa1 {
+
+ 
+         public static void main(String arg[ ]) {
+ 
+int[ ] numerodecoches = new int[24];
+
+ int r;
+
+ r = 2;
+
+ numerodecoches[r] = 23;
+
+System.out.print("El número de coches en la hora "+r+" fue "+ numerodecoches[r]);
+
+         }
+ 
+   }
+   
+   
+   
+   
+   EN PAYTON ;:
+   
+   package javaapplication1;
+
+import javax.swing.JOptionPane;
+ 
+public class Cuento {
+ 
+    /*lo que se pretende mostrar
+ 
+    *   Argentina   Buenos aires      cordoba       La plata
+    *   Colombia    Bogota            Cali          Medellin
+    *   Chile       Concepción        Santiago      Valparaiso
+    *   Mexico      Ciudad Juárez     León          Monterrey 
+    */
+ 
+public static void main(String args []) {
+ 
+    String [][] arrMulti ={  {"Agentina","Buenos Aires", "Cordoba", "La Plata"},
+                             {"Colombia","Bogota", "Cali", "Medellin"},
+                             {"Chile","Concepción", "Santiago", "Valparaiso"},
+                             {"Mexico","Ciudad Juárez", "León", "Monterrey"},                             
+                          };
+ 
+    String ax="";
+ 
+    for(int i=0; i<4; i++){
+        for(int j=0; j<4; j++){
+           ax+= arrMulti[i][j]+"        ";
+        }
+        ax+="n";
+    }
+ 
+    JOptionPane.showMessageDialog(null, ax);
+ 
+}
+}
